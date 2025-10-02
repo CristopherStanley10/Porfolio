@@ -979,7 +979,7 @@
 }
 /* 🔹 Sección de contacto con imagen de fondo */
 #contact {
-  background-image: url('src/img/network-9091914.jpg');
+  background-image: url('img/network-9091914.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1260,7 +1260,7 @@
 }
 /* 🌌 Fondo general */
 #cv {
-  background-image: url("src/img/curri.jpg"); /* 🔸 Cambia la ruta si es necesario */
+  background-image: url("img/curri.jpg"); /* 🔸 Cambia la ruta si es necesario */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
