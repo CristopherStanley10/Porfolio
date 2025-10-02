@@ -1,0 +1,1563 @@
+/* fonts*/
+@font-face {
+  font-family: 'Varsity';
+  src: url('src/fonts/Golden Varsity Outline.ttf') format('woff2'),
+       url('src/fonts/Golden Varsity Outline.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Talks';
+  src: url('src/fonts/Talks.ttf') format('woff2'),
+       url('src/fonts/Talks.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Morty';
+  src: url('src/fonts/Beasty Morty.ttf') format('woff2'),
+       url('src/fonts/Beasty Morty.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calculator';
+  src: url('src/fonts/Calculator.ttf') format('woff2'),
+       url('src/fonts/Calculator.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Disco';
+  src: url('src/fonts/Disco.ttf') format('woff2'),
+       url('src/fonts/Disco.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Front';
+  src: url('src/fonts/Front Page Supplement.otf') format('woff2'),
+       url('src/fonts/Front Page Supplement.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Braven';
+  src: url('src/fonts/BravenRegular.ttf') format('woff2'),
+       url('src/fonts/BravenRegular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenRing';
+  src: url('src/fonts/OpenRing-Regular.ttf') format('woff2'),
+       url('src/fonts/OpenRing-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Browser';
+  src: url('src/fonts/Browser.ttf') format('woff2'),
+       url('src/fonts/Browser.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nexa';
+  src: url('src/fonts/Nexa-ExtraLight.ttf') format('woff2'),
+       url('src/fonts/Nexa-ExtraLight.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NexaExtra';
+  src: url('src/fonts/Nexa-Heavy.ttf') format('woff2'),
+       url('src/fonts/Nexa-Heavy.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Trial';
+  src: url('src/fonts/TT Livret Text Trial Regular.ttf') format('woff2'),
+       url('src/fonts/TT Livret Text Trial Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Milky';
+  src: url('src/fonts/Milky Lemon.otf') format('woff2'),
+       url('src/fonts/Milky Lemon.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body */
+.body {
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Modo claro */
+.body.light {
+  background: #f0f4f8; /* blanco grisáceo con toque azul */
+  color: #111; /* texto oscuro */
+}
+
+/* Modo oscuro */
+.body.dark {
+  background: #08041a; /* morado casi negro con toque azul */
+  color: #ddd; /* texto claro */
+}
+
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+  background: transparent; 
+  position: relative;
+  z-index: 200;
+}
+
+.header__left {
+  display: none; /* Se mostrará en mobile */
+}
+
+.header__hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Oculto por defecto */
+  z-index: 201;
+}
+
+.header__hamburger img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto neón al pasar el mouse sobre hamburguesa */
+.header__hamburger:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+  box-shadow: 
+    0 0 0.5em #9333ea,
+    0 0 1em #e11d48,
+    0 0 1.5em #facc15,
+    0 0 2em #22d3ee;
+}
+
+.header__logo img {
+  width: 170px;
+}
+
+.header__right {
+  position: relative;
+}
+
+.header__settings-icon {
+  width: 40px;
+  cursor: pointer;
+  border-radius: 55%;
+}
+
+.header__dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 220px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.header__theme-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.header__theme-buttons button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+  width: 48%;
+}
+
+/* 🔥 Animación de luces City Nights - Modo oscuro */
+@keyframes lights-dark {
+  0% {
+    color: #9333ea;
+    text-shadow: 0 0 1em rgba(147, 51, 234, 0.4),
+                 0 0 0.25em rgba(147, 51, 234, 0.6);
+  }
+  25% {
+    color: #e11d48;
+    text-shadow: 0 0 1em rgba(225, 29, 72, 0.6),
+                 0 0 0.25em rgba(225, 29, 72, 0.8);
+  }
+  50% {
+    color: #facc15;
+    text-shadow: 0 0 1em rgba(250, 204, 21, 0.7),
+                 0 0 0.25em rgba(250, 204, 21, 0.9);
+  }
+  75% {
+    color: #22d3ee;
+    text-shadow: 0 0 1em rgba(34, 211, 238, 0.7),
+                 0 0 0.25em rgba(34, 211, 238, 0.9);
+  }
+  100% {
+    color: #9333ea;
+    text-shadow: 0 0 1em rgba(147, 51, 234, 0.5),
+                 0 0 0.25em rgba(147, 51, 234, 0.7);
+  }
+}
+
+/* 🔥 Animación de luces City Nights - Modo claro */
+@keyframes lights-light {
+  0% {
+    color: #2563eb;
+    text-shadow: 0 0 1em rgba(37, 99, 235, 0.3),
+                 0 0 0.25em rgba(37, 99, 235, 0.5);
+  }
+  25% {
+    color: #16a34a;
+    text-shadow: 0 0 1em rgba(22, 163, 74, 0.5),
+                 0 0 0.25em rgba(22, 163, 74, 0.7);
+  }
+  50% {
+    color: #d97706;
+    text-shadow: 0 0 1em rgba(217, 119, 6, 0.6),
+                 0 0 0.25em rgba(217, 119, 6, 0.8);
+  }
+  75% {
+    color: #dc2626;
+    text-shadow: 0 0 1em rgba(220, 38, 38, 0.6),
+                 0 0 0.25em rgba(220, 38, 38, 0.8);
+  }
+  100% {
+    color: #2563eb;
+    text-shadow: 0 0 1em rgba(37, 99, 235, 0.4),
+                 0 0 0.25em rgba(37, 99, 235, 0.6);
+  }
+}
+
+/* Enlaces de navegación */
+.nav__link {
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+/* Efecto City Nights */
+.city-nights {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'NexaExtra';
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.body.dark .city-nights {
+  animation: lights-dark 6s infinite linear;
+}
+
+.body.light .city-nights {
+  animation: lights-light 6s infinite linear;
+}
+
+.city-nights:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 1.5em currentColor, 0 0 0.5em currentColor;
+  transition: transform 0.6s ease;
+}
+
+/* Ajuste de navegación en escritorio */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px;
+}
+
+/* Modo oscuro / claro enlaces */
+.body.dark .nav__link {
+  color: #8892B0;
+}
+
+.body.light .nav__link {
+  color: #111;
+}
+
+/* Overlay del menú móvil */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99;
+}
+
+.nav-overlay.active {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header__left {
+    display: block; /* Mostrar hamburguesa en mobile */
+  }
+
+  .header__hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none; /* Ocultar nav por defecto en mobile */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0; /* cambia a right: 0 si lo quieres a la derecha */
+    width: 70%; /* ancho del menú */
+    height: 100%;
+    background-color: rgba(17,17,17,0.95);
+    padding: 20px;
+    z-index: 100;
+    overflow-y: auto;
+    gap: 15px; /* separa un poco los links */
+  }
+
+  .nav.nav--visible {
+    display: flex; /* Mostrar nav cuando se active */
+  }
+
+  .nav__link {
+    padding: 6px 0; /* más juntos */
+    text-align: left; /* alineado a la izquierda */
+  }
+}
+
+/* ---------- Contenedor principal ---------- */
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  min-height: 80vh;
+}
+
+/* ---------- Foto de perfil ---------- */
+.about__photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🌙 Modo oscuro */
+.body.dark .about__photo {
+  background: linear-gradient(45deg, #06b6d4, #22d3ee, #67e8f9);
+  box-shadow: 
+    0 0 30px 10px rgba(34, 211, 238, 0.7),
+    0 0 60px 20px rgba(6, 182, 212, 0.5),
+    0 0 100px 40px rgba(103, 232, 249, 0.3);
+}
+
+/* 🌞 Modo claro */
+.body.light .about__photo {
+  background: linear-gradient(45deg, #38bdf8, #0ea5e9, #0284c7);
+  box-shadow: 
+    0 0 30px 10px rgba(14, 165, 233, 0.6),
+    0 0 60px 20px rgba(2, 132, 199, 0.4),
+    0 0 100px 40px rgba(56, 189, 248, 0.3);
+}
+
+/* ---------- Contenido ---------- */
+.about__content {
+  background: 
+    linear-gradient(#121212, #121212) padding-box, 
+    linear-gradient(45deg, #ff6ec4, #facc15, #4ade80) border-box;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+  color: #fff;
+  text-align: left;
+
+  /* Glow multicolor en oscuro */
+  box-shadow: 
+    0 15px 35px rgba(255, 110, 196, 0.5),
+    0 30px 60px rgba(250, 204, 21, 0.4),
+    0 50px 100px rgba(74, 222, 128, 0.3);
+}
+
+/* 🌞 Versión modo claro */
+.body.light .about__content {
+  background: 
+    linear-gradient(#fdfdfd, #fdfdfd) padding-box,
+    linear-gradient(45deg, #cc0a77, #d4aa00, #1d8f3d) border-box;
+
+  box-shadow: 
+    0 20px 40px rgba(204, 10, 119, 0.6),
+    0 35px 70px rgba(212, 170, 0, 0.5),
+    0 55px 110px rgba(29, 143, 61, 0.4);
+
+  color: #111;
+}
+
+/* ---------- Títulos ---------- */
+.about__content h2 {
+  font-family: 'Braven';
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about__content p {
+  font-family: 'Trial';
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+
+/* 🌞 Texto en modo claro */
+.body.light .about__content p {
+  color: #111;
+}
+
+/* 🌙 Texto en modo oscuro */
+.body.dark .about__content p {
+  color: #fff;
+}
+
+/* ----------------------------- */
+/* 📱 RESPONSIVE DESIGN          */
+/* ----------------------------- */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+  .about__container {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+  .about__photo {
+    width: 180px;
+    height: 180px;
+  }
+  .about__content {
+    padding: 25px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .about__container {
+    padding: 20px 10px;
+    gap: 25px;
+  }
+  .about__photo {
+    width: 150px;
+    height: 150px;
+  }
+  .about__content {
+    padding: 20px;
+  }
+  .about__content h2 {
+    font-size: 1.6rem;
+  }
+  .about__content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* Extra small */
+@media (max-width: 400px) {
+  .about__photo {
+    width: 120px;
+    height: 120px;
+  }
+  .about__content {
+    padding: 15px;
+  }
+  .about__content h2 {
+    font-size: 1.4rem;
+  }
+  .about__content p {
+    font-size: 0.85rem;
+  }
+}
+/* Projects */
+.projects__title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  font-family: 'Milky';
+  font-weight: bold;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+/* 🌞 Modo claro → texto negro levantado */
+.body.light .projects__title {
+  color: #111;
+  text-shadow:
+    1px 1px 0 #ccc,
+    2px 2px 0 #bbb,
+    3px 3px 0 #aaa,
+    4px 4px 0 #999,
+    5px 5px 15px rgba(0,0,0,0.25);
+}
+
+/* 🌙 Modo oscuro → texto blanco levantado */
+.body.dark .projects__title {
+  color: #fff;
+  text-shadow:
+    1px 1px 0 #444,
+    2px 2px 0 #333,
+    3px 3px 0 #222,
+    4px 4px 0 #111,
+    5px 5px 20px rgba(0,0,0,0.6);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project__card {
+  position: relative;
+  background-color: var(--card-bg, #fff);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  overflow: visible;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Contenido alineado a la izquierda */
+  text-align: left;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  color: var(--card-text, #000);
+  z-index: 0;
+}
+
+/* Glow difuso exterior */
+.project__card::before {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  border-radius: 16px;
+  background: linear-gradient(
+    270deg,
+    #ff007f,
+    #ff66b2,
+    #9b4dff,
+    #4a90e2,
+    #00ffd5
+  );
+  background-size: 400% 400%;
+  filter: blur(28px);
+  opacity: 0.7;
+  z-index: -2;
+  animation: gradientShift 6s ease infinite;
+}
+
+/* Borde iluminado animado */
+.project__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: linear-gradient(var(--card-bg, #fff), var(--card-bg, #fff)) padding-box,
+              linear-gradient(
+                270deg,
+                #ff007f,
+                #ff66b2,
+                #9b4dff,
+                #4a90e2,
+                #00ffd5
+              ) border-box;
+  background-size: 100% 100%, 400% 400%;
+  background-position: center, 0% 50%;
+  z-index: -1;
+  animation: gradientShift 6s ease infinite;
+}
+
+/* Contenido visible siempre encima */
+.project__card > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: center, 0% 50%; }
+  50%  { background-position: center, 100% 50%; }
+  100% { background-position: center, 0% 50%; }
+}
+
+.project__card:hover {
+  transform: translateY(-6px);
+}
+
+.project__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Título centrado */
+.project__title {
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
+  width: 100%;
+  text-align: center; /* Título centrado */
+}
+
+/* 🔹 Descripción y tecnologías alineadas a la izquierda */
+.project__description,
+.project__tech,
+.project__testimonial {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.project__tech {
+  font-size: 0.9rem;
+  color: inherit;
+}
+
+.project__testimonial {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: inherit;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Botón profesional con bordes iluminados y adaptable a modo claro y oscuro */
+.project__button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  border: 2px solid transparent;
+  background-image: linear-gradient(var(--btn-bg, #007bff), var(--btn-bg, #007bff)),
+                    linear-gradient(45deg, var(--btn-glow1, #ff7d00), var(--btn-glow2, #ff00a1), var(--btn-glow3, #00ffe5));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: borderGradient 4s linear infinite;
+  color: var(--btn-text, #fff);
+}
+
+/* Hover: resplandor y movimiento */
+.project__button:hover {
+  transform: translateY(-7px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4), 0 0 30px var(--btn-glow2, #ff00a1);
+}
+
+/* Click: se hunde un poco */
+.project__button:active {
+  transform: translateY(-2px) scale(0.98);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3), 0 0 15px var(--btn-glow2, #ff00a1);
+}
+
+/* Animación del borde gradiente */
+@keyframes borderGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Reflejo sutil */
+.project__button::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255,255,255,0.2);
+  transform: rotate(25deg) translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.project__button:hover::after {
+  transform: rotate(25deg) translateX(100%);
+}
+
+/* 🌞 Modo claro */
+.body.light .project__button {
+  --btn-bg: #007bff;       /* azul principal */
+  --btn-text: #fff;
+  --btn-glow1: #00d4ff;    /* cian */
+  --btn-glow2: #ff7d00;    /* naranja */
+  --btn-glow3: #ff00aa;    /* fucsia */
+}
+
+/* 🌙 Modo oscuro */
+.body.dark .project__button {
+  --btn-bg: #1c1c2e;       /* oscuro elegante */
+  --btn-text: #fff;
+  --btn-glow1: #00ffe5;    /* turquesa */
+  --btn-glow2: #ff00ff;    /* magenta */
+  --btn-glow3: #7f00ff;    /* violeta */
+}
+
+
+/* 🌞 Modo claro actualizado - borde con rosa y fondo masculino */
+.body.light .project__button {
+  --btn-bg: #2c3e50;       /* fondo oscuro masculino */
+  --btn-text: #fff;
+  --btn-glow1: #d354f7;    /* rosa neón */
+  --btn-glow2: #8e44ad;    /* morado */
+  --btn-glow3: #f1c40f;    /* amarillo dorado */
+  --btn-glow4: #e67e22;    /* naranja suave */
+}
+
+/* Actualizamos la animación del borde para incluir el nuevo color */
+.project__button {
+  background-image: linear-gradient(var(--btn-bg, #2c3e50), var(--btn-bg, #2c3e50)),
+                    linear-gradient(45deg, var(--btn-glow1, #d354f7), var(--btn-glow2, #8e44ad), var(--btn-glow3, #f1c40f), var(--btn-glow4, #e67e22));
+}
+
+.body.light .project__card::before,
+.body.light .project__card::after {
+  opacity: 0.8;
+}
+
+/* 🌙 Modo oscuro */
+.body.dark .project__card {
+  --card-bg: #1c1c2e;
+  --card-text: #ffffff;
+}
+
+.body.dark .project__card::before,
+.body.dark .project__card::after {
+  opacity: 0.9;
+}
+
+/* ---------- Skills ---------- */
+
+.skill__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Mantener nombre a la izquierda y porcentaje a la derecha */
+  margin-bottom: 8px;
+}
+
+.skill__logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  object-fit: contain;
+  border-radius: 50%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill__logo:hover {
+  transform: scale(1.08);
+}
+
+/* título */
+.skills__title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-family: 'Milky';
+}
+
+/* contenedor */
+.skills__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 60px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill__info span.skill__name {
+  text-align: left;
+}
+
+.skill__info span.skill__percent {
+  text-align: right;
+}
+
+/* Barra (fondo) */
+.skill__bar {
+  background-color: #e9e9e9;
+  height: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.08), 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* Progreso (relleno) */
+.skill__progress {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 900ms cubic-bezier(.22,.9,.36,1);
+  position: relative;
+  overflow: hidden;
+  background: var(--skill-color, #007bff);
+  box-shadow: 0 0 10px rgba(0,0,0,0.06), 0 0 18px var(--skill-color)33;
+}
+
+/* ---------- Animación de línea difusa (solo dark mode) ---------- */
+.body.dark .skill__progress::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255,255,255,0.35) 45%,
+    rgba(255,255,255,0.6) 50%,
+    rgba(255,255,255,0.35) 55%,
+    transparent 100%
+  );
+  filter: blur(3px) drop-shadow(0 0 8px var(--skill-color));
+  opacity: 0.95;
+  animation: moveLine 4.5s linear infinite;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+@keyframes moveLine {
+  0%   { left: -40%; }
+  100% { left: 110%; }
+}
+
+/* ---------- Colores por lenguaje ---------- */
+.skill--html .skill__progress { --skill-color: #e44d26; }
+.skill--css  .skill__progress { --skill-color: #264de4; }
+.skill--js   .skill__progress { --skill-color: #f7df1e; }
+.skill--react .skill__progress { --skill-color: #7f5af0; }
+.skill--python .skill__progress { --skill-color: #306998; }
+.skill--ts   .skill__progress { --skill-color: #3178c6; }
+.skill--node .skill__progress { --skill-color: #3c873a; }
+.skill--java .skill__progress { --skill-color: #5382a1; }
+
+/* ---------- Glow de los logos ---------- */
+.skill--html .skill__logo  { box-shadow: 0 0 18px rgba(228,77,38,0.9); }
+.skill--css .skill__logo   { box-shadow: 0 0 18px rgba(38,77,228,0.9); }
+.skill--js .skill__logo    { box-shadow: 0 0 18px rgba(247,223,30,0.95); }
+.skill--react .skill__logo { box-shadow: 0 0 18px rgba(127,90,240,0.95); }
+.skill--python .skill__logo{ box-shadow: 0 0 18px rgba(48,105,152,0.9); }
+.skill--ts .skill__logo    { box-shadow: 0 0 18px rgba(49,120,198,0.9); }
+.skill--node .skill__logo  { box-shadow: 0 0 18px rgba(60,135,58,0.9); }
+.skill--java .skill__logo  { box-shadow: 0 0 18px rgba(83,130,161,0.9); }
+
+/* ---------- Dark mode ---------- */
+.body.dark .skill__bar {
+  background-color: #2b2b2b;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.6), 0 6px 18px rgba(0,0,0,0.6);
+}
+.body.dark .skill__progress {
+  box-shadow: 0 0 18px var(--skill-color);
+}
+
+/* ---------- Light mode ---------- */
+@media (prefers-color-scheme: light) {
+  .skill--html .skill__logo  { box-shadow: 0 0 30px rgba(228,77,38,1); }
+  .skill--css .skill__logo   { box-shadow: 0 0 30px rgba(38,77,228,1); }
+  .skill--js .skill__logo    { box-shadow: 0 0 30px rgba(247,223,30,1); }
+  .skill--react .skill__logo { box-shadow: 0 0 30px rgba(127,90,240,1); }
+  .skill--python .skill__logo{ box-shadow: 0 0 30px rgba(48,105,152,1); }
+  .skill--ts .skill__logo    { box-shadow: 0 0 30px rgba(49,120,198,1); }
+  .skill--node .skill__logo  { box-shadow: 0 0 30px rgba(60,135,58,1); }
+  .skill--java .skill__logo  { box-shadow: 0 0 30px rgba(83,130,161,1); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media screen and (max-width: 900px) {
+  .skills__container {
+    max-width: 90%;
+    gap: 18px;
+  }
+  .skill__info {
+    flex-direction: row; /* Mantener nombre a la izquierda y porcentaje a la derecha */
+    justify-content: space-between;
+    font-size: 0.95rem;
+  }
+  .skill__logo {
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills__title {
+    font-size: 2.4rem;
+  }
+  .skill__info {
+    font-size: 0.9rem;
+  }
+  .skill__logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+  }
+  .skill__bar {
+    height: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills__title {
+    font-size: 2rem;
+    margin-top: 60px;
+  }
+  .skill__bar {
+    height: 10px;
+  }
+  .skill__progress {
+    border-radius: 6px;
+  }
+}
+/* 🔹 Sección de contacto con imagen de fondo */
+#contact {
+  background-image: url('src/img/network-9091914.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  position: relative;
+}
+
+/* 🔹 Contenedor principal */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* 🔹 Título igual que .projects__title */
+.contact__title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  margin-top: 0;
+  font-family: 'Milky';
+  font-weight: bold;
+  position: relative;
+  letter-spacing: 2px;
+  color: inherit;
+}
+
+/* 🔹 Recuadro principal semi-transparente y centrado */
+.contact__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 1100px;
+  min-height: 550px;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔸 Modo claro */
+.body.light .contact__box {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+}
+
+/* 🔸 Modo oscuro */
+.body.dark .contact__box {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+/* 🔹 Formulario */
+.contact__form-side {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form input,
+.contact__form textarea {
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: inherit;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) inset;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  color: inherit;
+  opacity: 0.7;
+}
+
+/* 🔹 Textarea ajustable */
+.contact__form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* 🔹 Botón base */
+.contact__form button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.4s ease;
+  position: relative;
+  font-weight: 600;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* 🌓 Colores modo claro/oscuro */
+.body.light .contact__form button {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.body.dark .contact__form button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* 💫 Hover */
+.contact__form button:hover {
+  transform: scale(1.05);
+}
+
+/* ⚡ Efecto Neón Pulse */
+.contact__form button.neon-pulse {
+  border: 2px solid #0ff;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  background: none;
+  color: #0ff;
+  overflow: visible;
+}
+
+.contact__form button.neon-pulse::before,
+.contact__form button.neon-pulse::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 2px solid #0ff;
+  border-radius: inherit;
+  animation: pulseOut 2s ease-out infinite;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact__form button.neon-pulse::after {
+  animation-delay: 1s;
+}
+
+@keyframes pulseOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* 🔹 Lado derecho */
+.contact__info-side {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* 🔹 Redes sociales */
+.contact__socials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.social-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* 🔹 Info texto */
+.contact__info h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.contact__info p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+/* 🔹📱 RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .contact__box {
+    flex-direction: column;
+    min-height: auto;
+    padding: 2rem 1.5rem;
+  }
+
+  .contact__form-side,
+  .contact__info-side {
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  .contact__socials {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .contact__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__title {
+    font-size: 2.2rem;
+  }
+
+  .contact__box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contact__form input,
+  .contact__form textarea {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact__title {
+    font-size: 1.8rem;
+  }
+
+  .contact__box {
+    width: 95%;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact__form button {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+/* 🌌 Fondo general */
+#cv {
+  background-image: url("src/img/curri.jpg"); /* 🔸 Cambia la ruta si es necesario */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+/* 📜 Título */
+.cv__title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-family: "Milky";
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: inherit;
+}
+
+/* 📦 Contenedor principal */
+.cv__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* 🧱 Cuadros */
+.cv__block {
+  flex: 1 1 450px;
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+/* 🌞 Modo claro */
+.body.light .cv__block {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  box-shadow:
+    0 0 25px rgba(255, 255, 255, 0.8),
+    0 0 50px rgba(255, 255, 255, 0.4),
+    inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* 🌚 Modo oscuro */
+.body.dark .cv__block {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  box-shadow:
+    0 0 25px rgba(0, 255, 255, 0.7),
+    0 0 50px rgba(0, 255, 255, 0.3),
+    inset 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+/* 🟢 Educación (Verde brillante) */
+.education {
+  border-color: #00ff88;
+  box-shadow:
+    0 0 20px #00ff88,
+    0 0 40px rgba(0, 255, 136, 0.6),
+    inset 0 0 15px rgba(0, 255, 136, 0.3);
+}
+
+/* 🔵 Experiencia (Azul brillante) */
+.experience {
+  border-color: #00c3ff;
+  box-shadow:
+    0 0 20px #00c3ff,
+    0 0 40px rgba(0, 195, 255, 0.6),
+    inset 0 0 15px rgba(0, 195, 255, 0.3);
+}
+
+/* 🧠 Cabecera (Logo + Título + Porcentaje) */
+.cv__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* ✅ Para que no se rompa en responsive */
+  gap: 1rem;
+}
+
+.cv__header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* 🌟 Icono (más grande + hover + brillo) */
+.cv__icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cv__icon:hover {
+  transform: scale(1.1);
+}
+
+/* 💡 Brillo según modo */
+.body.light .cv__icon {
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+}
+
+.body.dark .cv__icon {
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.7));
+}
+
+/* 🔹 Texto */
+.cv__block h3 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.cv__block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv__block li {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* 🌀 Porcentaje circular */
+.circular-chart {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.green .circle {
+  stroke: #00ff88;
+}
+
+.blue .circle {
+  stroke: #00c3ff;
+}
+
+.percentage {
+  fill: currentColor;
+  font-size: 0.6em;
+  text-anchor: middle;
+  font-weight: bold;
+}
+
+/* Animación del progreso */
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+/* 📎 Botón de descarga futurista */
+.cv__download {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* 🚀 Botón animado */
+.super-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  backdrop-filter: blur(8px);
+  z-index: 1;
+  text-decoration: none;
+}
+
+.body.light .super-button {
+  color: #000;
+  background: linear-gradient(145deg, #fafafa, #eaeaea);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.body.dark .super-button {
+  color: #c7bebe;
+  background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+/* ✨ Borde animado giratorio */
+.super-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #00ffff, #ff00ff, #00ffff);
+  animation: rotate 4s linear infinite;
+  z-index: -2;
+}
+
+.super-button::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: inherit;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.super-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+.super-button:hover .arrow {
+  transform: translateX(6px);
+}
+
+.arrow {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease-in-out;
+  color: #00ffff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 📱 Responsivo */
+@media (max-width: 768px) {
+  .cv__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cv__block {
+    width: 90%;
+  }
+
+  .cv__header {
+    flex-direction: column; /* ✅ Círculo abajo del título en móvil */
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .circular-chart {
+    width: 80px; /* un poquito más grande en móvil */
+    height: 80px;
+    margin-top: 0.5rem;
+  }
+
+  .cv__icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+
+

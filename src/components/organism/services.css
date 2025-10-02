@@ -1,0 +1,285 @@
+/* ---------- Contenedor ---------- */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ---------- Título ---------- */
+.services__title {
+  font-size: 3rem;
+  font-family: 'Milky';
+  margin-bottom: 40px;
+}
+
+/* ---------- Botones de categoría ---------- */
+.services__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.services__btn {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* --- Animaciones generales --- */
+@keyframes borderGlow {
+  0% {
+    box-shadow: 0 0 4px var(--btn-color), inset 0 0 2px var(--btn-color);
+  }
+  50% {
+    box-shadow: 0 0 15px var(--btn-color), inset 0 0 8px var(--btn-color);
+  }
+  100% {
+    box-shadow: 0 0 4px var(--btn-color), inset 0 0 2px var(--btn-color);
+  }
+}
+
+@keyframes shineEffect {
+  0% {
+    box-shadow: 0 0 8px var(--btn-color),
+      0 0 15px var(--btn-color),
+      inset 0 0 10px var(--btn-color);
+  }
+  50% {
+    box-shadow: 0 0 25px var(--btn-color),
+      0 0 40px var(--btn-color),
+      inset 0 0 20px var(--btn-color);
+  }
+  100% {
+    box-shadow: 0 0 8px var(--btn-color),
+      0 0 15px var(--btn-color),
+      inset 0 0 10px var(--btn-color);
+  }
+}
+
+/* ---------- Colores por categoría - modo claro ---------- */
+.services__btn[data-category="Esencial"] {
+  --btn-color: #ff9800;
+  background-color: #ffebcc;
+  color: #a85b00;
+  border-color: var(--btn-color);
+}
+
+.services__btn[data-category="Profesional"] {
+  --btn-color: #007bff;
+  background-color: #e0f0ff;
+  color: #004080;
+  border-color: var(--btn-color);
+}
+
+.services__btn[data-category="Empresarial"] {
+  --btn-color: #28a745;
+  background-color: #e5ffe5;
+  color: #006600;
+  border-color: var(--btn-color);
+}
+
+/* Hover general */
+.services__btn:hover {
+  transform: scale(1.05);
+  filter: brightness(0.95);
+}
+
+/* --- Botón activo con luz encendida (modo claro) --- */
+.services__btn.active {
+  animation: shineEffect 2.5s ease-in-out infinite;
+  color: inherit;
+}
+
+/* --- Botones inactivos con borde luminoso --- */
+.services__btn:not(.active) {
+  animation: borderGlow 2.5s ease-in-out infinite;
+}
+
+/* ---------- Dark Mode - botones ---------- */
+.body.dark .services__btn[data-category="Esencial"] {
+  --btn-color: #ff9800;
+  background-color: #663c00;
+  color: #ffcc80;
+  border-color: var(--btn-color);
+}
+
+.body.dark .services__btn[data-category="Profesional"] {
+  --btn-color: #3399ff;
+  background-color: #003366;
+  color: #80cfff;
+  border-color: var(--btn-color);
+}
+
+.body.dark .services__btn[data-category="Empresarial"] {
+  --btn-color: #33cc66;
+  background-color: #003300;
+  color: #80ffb3;
+  border-color: var(--btn-color);
+}
+
+.body.dark .services__btn.active[data-category="Esencial"],
+.body.dark .services__btn.active[data-category="Profesional"],
+.body.dark .services__btn.active[data-category="Empresarial"] {
+  animation: shineEffect 2.5s ease-in-out infinite;
+}
+
+.body.dark .services__btn:not(.active) {
+  animation: borderGlow 2.5s ease-in-out infinite;
+}
+
+/* ---------- Contenedor de Servicios ---------- */
+.services__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- Tarjetas ---------- */
+.services__cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.service__card {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  min-height: 480px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  text-align: left;
+  border: 2px solid #6a5acd;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+}
+
+.service__card.center-card {
+  border-color: #8a2be2;
+  transform: scale(1.06);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.16);
+}
+
+/* hover general */
+.service__card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.18);
+}
+
+/* hover para el del medio */
+.service__card.center-card:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+}
+
+/* ---------- Dark Mode para tarjetas ---------- */
+.body.dark .service__card {
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #6a5acd;
+  box-shadow: 0 0 20px rgba(106, 90, 205, 0.6);
+}
+
+.body.dark .service__card.center-card {
+  border-color: #8a2be2;
+  box-shadow: 0 0 28px rgba(138, 43, 226, 0.72);
+  background-color: #2b1b3a;
+  transform: scale(1.06);
+}
+
+.body.dark .service__card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 25px rgba(106, 90, 205, 0.7);
+}
+
+.body.dark .service__card.center-card:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow: 0 0 35px rgba(138, 43, 226, 0.85);
+}
+
+/* ---------- Logo más grande ---------- */
+.service__logo {
+  display: block;
+  margin: 15px auto;
+  width: 120px;
+  height: 120px;
+  max-width: 95%;
+  object-fit: contain;
+}
+
+/* ---------- Título y Descripción ---------- */
+.service__name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service__description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.service__price {
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* ---------- Puntos ---------- */
+.service__points {
+  text-align: left;
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.service__points li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* ---------- Responsividad ---------- */
+@media (max-width: 1024px) {
+  .service__card {
+    width: 260px;
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services__title {
+    font-size: 2.5rem;
+  }
+  .services__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service__card {
+    width: 80%;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .services__title {
+    font-size: 2rem;
+  }
+  .service__card {
+    width: 100%;
+    padding: 20px;
+  }
+  .services__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
