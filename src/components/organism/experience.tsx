@@ -18,7 +18,7 @@ const experienceData: ExperienceItem[] = [
       'Desarrollé interfaces modernas usando React y Tailwind CSS.',
       'Implementé funcionalidades SPA para mejorar la UX en un 40%.',
     ],
-    image: 'src/img/1.0.png'
+    image: 'img/1.0.png'
   },
   {
     company: 'Freelance',
@@ -28,7 +28,7 @@ const experienceData: ExperienceItem[] = [
       'Desarrollé sitios web y sistemas administrativos para pequeños negocios.',
       'Stack usado: HTML, CSS, JavaScript, PHP, MySQL.',
     ],
-    image: 'src/img/2.0.png'
+    image: 'img/2.0.png'
   },
   {
     company: 'Innovatech Perú',
@@ -38,7 +38,7 @@ const experienceData: ExperienceItem[] = [
       'Diseñé y optimicé APIs REST con Node.js y Express.',
       'Gestioné bases de datos relacionales con PostgreSQL.',
     ],
-    image: 'src/img/3.0.png'
+    image: 'img/3.0.png'
   },
   {
     company: 'StartUp Creativa',
@@ -48,7 +48,7 @@ const experienceData: ExperienceItem[] = [
       'Creé maquetaciones responsive con HTML5, CSS3 y Bootstrap.',
       'Colaboré en la identidad visual de productos digitales.',
     ],
-    image: 'src/img/4.0.png'
+    image: 'img/4.0.png'
   },
   {
     company: 'GlobalSoft Corp.',
@@ -58,7 +58,7 @@ const experienceData: ExperienceItem[] = [
       'Participé en el desarrollo de un ERP corporativo usando Java y Spring Boot.',
       'Automatizé pruebas con JUnit, reduciendo errores en producción en un 25%.',
     ],
-    image: 'src/img/5.0.png'
+    image: 'img/5.0.png'
   },
   {
     company: 'IT Support Solutions',
@@ -68,7 +68,7 @@ const experienceData: ExperienceItem[] = [
       'Brindé soporte a usuarios en entornos Windows y Linux.',
       'Configuré redes locales y servidores básicos.',
     ],
-    image: 'src/img/6.0.png'
+    image: 'img/6.0.png'
   }
 ];
 
