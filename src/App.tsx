@@ -53,7 +53,7 @@ const App: React.FC = () => {
 
         <div className="header__right">
           <img
-            src="src/img/dark.png"
+            src="img/dark.png"
             alt="Ajustes"
             className="header__settings-icon"
             onClick={toggleDarkMode}
@@ -102,7 +102,7 @@ const App: React.FC = () => {
   <div className="about__container">
     <div className="about__profile">
       <img
-        src="src/img/Snapchat-704985067.jpg"  // Verifica que esta ruta sea la correcta
+        src="img/Snapchat-704985067.jpg"  // Verifica que esta ruta sea la correcta
         alt="Foto de perfil"
         className="about__photo"  // Asegúrate de que la clase esté aplicada correctamente
       />
@@ -128,7 +128,7 @@ const App: React.FC = () => {
         <h2 className="projects__title">Mis Proyectos</h2>
         <div className="projects__grid">
           <div className="project__card">
-            <img src="src/img/primera.00.jpg" alt="Proyecto 1" className="project__image" />
+            <img src="img/primera.00.jpg" alt="Proyecto 1" className="project__image" />
             <h3 className="project__title">Registro</h3>
             <p className="project__description">Es una interfaz de inicio de sesión minimalista con ilustración a la izquierda y formulario de acceso a la derecha, en un diseño limpio y moderno.</p>
             <p className="project__tech">Tecnologías: HTML, CSS</p>
@@ -137,7 +137,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="project__card">
-            <img src="src/img/segunda.00.jpg" alt="Proyecto 2" className="project__image" />
+            <img src="img/segunda.00.jpg" alt="Proyecto 2" className="project__image" />
             <h3 className="project__title">Login</h3>
             <p className="project__description">Es un formulario minimalista con ícono de usuario, campos de acceso y botones de Iniciar sesión y Registrarse.</p>
             <p className="project__tech">Tecnologías: HTML, CSS</p>
@@ -146,7 +146,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="project__card">
-            <img src="src/img/tercera.00.jpg" alt="Proyecto 3" className="project__image" />
+            <img src="img/tercera.00.jpg" alt="Proyecto 3" className="project__image" />
             <h3 className="project__title">CopaFácil</h3>
             <p className="project__description">CopaFácil es una plataforma online para organizar torneos deportivos con facilidad, creando fixtures, estadísticas y clasificaciones de forma automática.</p>
             <p className="project__tech">Tecnologías: React, js</p>
@@ -155,7 +155,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="project__card">
-            <img src="src/img/cuarta.00.jpg" alt="Proyecto 4" className="project__image" />
+            <img src="img/cuarta.00.jpg" alt="Proyecto 4" className="project__image" />
             <h3 className="project__title">Angelfire</h3>
             <p className="project__description">Angelfire es un servicio clásico de alojamiento web gratuito que permite crear páginas personales simples con herramientas básicas de diseño y edición.</p>
             <p className="project__tech">Tecnologías: Node.js, Express</p>
@@ -173,7 +173,7 @@ const App: React.FC = () => {
 
     <div className="skill skill--html">
       <div className="skill__info">
-        <img src="src/img/html.png" alt="HTML Logo" className="skill__logo" />
+        <img src="img/html.png" alt="HTML Logo" className="skill__logo" />
         <span className="skill__name">HTML</span>
         <span className="skill__percent">95%</span>
       </div>
@@ -184,7 +184,7 @@ const App: React.FC = () => {
 
     <div className="skill skill--css">
       <div className="skill__info">
-        <img src="src/img/css.png" alt="CSS Logo" className="skill__logo" />
+        <img src="img/css.png" alt="CSS Logo" className="skill__logo" />
         <span className="skill__name">CSS</span>
         <span className="skill__percent">90%</span>
       </div>
@@ -195,7 +195,7 @@ const App: React.FC = () => {
 
     <div className="skill skill--js">
       <div className="skill__info">
-        <img src="src/img/js.png" alt="JavaScript Logo" className="skill__logo" />
+        <img src="img/js.png" alt="JavaScript Logo" className="skill__logo" />
         <span className="skill__name">JavaScript</span>
         <span className="skill__percent">85%</span>
       </div>
@@ -206,7 +206,7 @@ const App: React.FC = () => {
 
     <div className="skill skill--react">
       <div className="skill__info">
-        <img src="src/img/react.png" alt="React Logo" className="skill__logo" />
+        <img src="img/react.png" alt="React Logo" className="skill__logo" />
         <span className="skill__name">React</span>
         <span className="skill__percent">80%</span>
       </div>
@@ -217,7 +217,7 @@ const App: React.FC = () => {
 
     <div className="skill skill--python">
       <div className="skill__info">
-        <img src="src/img/python.png" alt="Python Logo" className="skill__logo" />
+        <img src="img/python.png" alt="Python Logo" className="skill__logo" />
         <span className="skill__name">Python</span>
         <span className="skill__percent">88%</span>
       </div>
@@ -228,7 +228,7 @@ const App: React.FC = () => {
 
     <div className="skill skill--ts">
       <div className="skill__info">
-        <img src="src/img/typescript.png" alt="TypeScript Logo" className="skill__logo" />
+        <img src="img/typescript.png" alt="TypeScript Logo" className="skill__logo" />
         <span className="skill__name">TypeScript</span>
         <span className="skill__percent">82%</span>
       </div>
@@ -239,7 +239,7 @@ const App: React.FC = () => {
 
     <div className="skill skill--node">
       <div className="skill__info">
-        <img src="src/img/nodejs.png" alt="Node.js Logo" className="skill__logo" />
+        <img src="img/nodejs.png" alt="Node.js Logo" className="skill__logo" />
         <span className="skill__name">Node.js</span>
         <span className="skill__percent">78%</span>
       </div>
@@ -250,7 +250,7 @@ const App: React.FC = () => {
 
     <div className="skill skill--java">
       <div className="skill__info">
-        <img src="src/img/java.png" alt="Java Logo" className="skill__logo" />
+        <img src="img/java.png" alt="Java Logo" className="skill__logo" />
         <span className="skill__name">Java</span>
         <span className="skill__percent">70%</span>
       </div>
