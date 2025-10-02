@@ -303,16 +303,16 @@ const App: React.FC = () => {
         <h3>Redes Sociales</h3>
         <div className="contact__socials">
           <a href="https://www.facebook.com/share/1B7y9ERbYg/" target="_blank" rel="noopener noreferrer">
-            <img src="/img/facebook-3.00.png" alt="Facebook" className="social-icon" />
+            <img src="img/facebook 3.00.png" alt="Facebook" className="social-icon" />
           </a>
           <a href="https://www.instagram.com/cristophersilvacruz" target="_blank" rel="noopener noreferrer">
-            <img src="/img/instagram.png" alt="Instagram" className="social-icon" />
+            <img src="img/instagram.png" alt="Instagram" className="social-icon" />
           </a>
           <a href="https://www.tiktok.com/@cristophersilvacr66" target="_blank" rel="noopener noreferrer">
-            <img src="/img/tik-tok.png" alt="TikTok" className="social-icon" />
+            <img src="img/tik-tok.png" alt="TikTok" className="social-icon" />
           </a>
           <a href="https://wa.me/51914068562" target="_blank" rel="noopener noreferrer">
-            <img src="/img/whatsapp-3.00.png" alt="WhatsApp" className="social-icon" />
+            <img src="img/whatsapp3.00.png" alt="WhatsApp" className="social-icon" />
           </a>
         </div>
 
