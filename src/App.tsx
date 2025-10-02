@@ -46,7 +46,7 @@ const App: React.FC = () => {
 
         <div className="header__logo">
           <img
-            src="src/img/Captura_de_pantalla_2025-09-26_131834-removebg-preview.png"
+            src="./src/img/Captura_de_pantalla_2025-09-26_131834-removebg-preview.png"
             alt="Logo"
           />
         </div>
