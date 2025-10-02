@@ -40,7 +40,7 @@ const App: React.FC = () => {
             className="header__hamburger"
             onClick={toggleNav}
           >
-            <img src="src/img/burger-menu.png" alt="Menú" />
+            <img src="img/burger-menu.png" alt="Menú" />
           </button>
         </div>
 
