@@ -12,19 +12,19 @@ const servicesData: Record<string, ServiceCard[]> = {
   Esencial: [
     {
       title: 'Plan Básico',
-      img: 'src/img/favorite-unscreen.gif',
+      img: 'img/favorite-unscreen.gif',
       points: ['Sitio responsivo', 'Optimización básica', 'Soporte limitado'],
       price: 'S/. 100',
     },
     {
       title: 'Plan Intermedio',
-      img: 'src/img/price-tag-unscreen.gif',
+      img: 'img/price-tag-unscreen.gif',
       points: ['Sitio responsivo', 'SEO básico', 'Soporte 24h'],
       price: 'S/. 300',
     },
     {
       title: 'Plan Avanzado',
-      img: 'src/img/hot-sale-unscreen.gif',
+      img: 'img/hot-sale-unscreen.gif',
       points: ['Sitio premium', 'SEO avanzado', 'Soporte completo'],
       price: 'S/. 500',
     },
@@ -32,19 +32,19 @@ const servicesData: Record<string, ServiceCard[]> = {
   Profesional: [
     {
       title: 'Pro Básico',
-      img: 'src/img/favorite-1--unscreen.gif',
+      img: 'img/favorite-1--unscreen.gif',
       points: ['App sencilla', 'Backend básico', 'Soporte limitado'],
       price: 'S/. 800',
     },
     {
       title: 'Pro Intermedio',
-      img: 'src/img/price-tag-1--unscreen.gif',
+      img: 'img/price-tag-1--unscreen.gif',
       points: ['App completa', 'Integración APIs', 'Soporte 24h'],
       price: 'S/. 1000',
     },
     {
       title: 'Pro Avanzado',
-      img: 'src/img/hot-sale-1--unscreen.gif',
+      img: 'img/hot-sale-1--unscreen.gif',
       points: ['App premium', 'Integración completa', 'Soporte completo'],
       price: 'S/. 1300',
     },
@@ -52,19 +52,19 @@ const servicesData: Record<string, ServiceCard[]> = {
   Empresarial: [
     {
       title: 'Empresa Básico',
-      img: 'src/img/gadget-unscreen.gif',
+      img: 'img/gadget-unscreen.gif',
       points: ['Sistema administrativo', 'Seguridad básica', 'Soporte limitado'],
       price: 'S/. 1000',
     },
     {
       title: 'Empresa Intermedio',
-      img: 'src/img/price-tag-2--unscreen.gif',
+      img: 'img/price-tag-2--unscreen.gif',
       points: ['Sistema completo', 'Automatización', 'Soporte 24h'],
       price: 'S/. 1500',
     },
     {
       title: 'Empresa Avanzado',
-      img: 'src/img/shopping-unscreen.gif',
+      img: 'img/shopping-unscreen.gif',
       points: ['Solución full-stack', 'Integración APIs', 'Soporte VIP'],
       price: 'S/. 2000',
     },

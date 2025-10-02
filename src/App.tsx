@@ -294,16 +294,16 @@ const App: React.FC = () => {
           <h3>Redes Sociales</h3>
           <div className="contact__socials">
             <a href="https://www.facebook.com/share/1B7y9ERbYg/" target="_blank">
-              <img src="src/img/facebook 3.00.png" alt="Facebook" className="social-icon" />
+              <img src="img/facebook 3.00.png" alt="Facebook" className="social-icon" />
             </a>
             <a href="https://www.instagram.com/cristophersilvacruz?igsh=eGo3anlzdnAzM3Iz" target="_blank">
-              <img src="src/img/instagram.png" alt="Instagram" className="social-icon" />
+              <img src="img/instagram.png" alt="Instagram" className="social-icon" />
             </a>
             <a href="https://www.tiktok.com/@cristophersilvacr66?_t=ZS-90CA27LWm1a&_r=1" target="_blank">
-              <img src="src/img/tik-tok.png" alt="TikTok" className="social-icon" />
+              <img src="img/tik-tok.png" alt="TikTok" className="social-icon" />
             </a>
             <a href="https://wa.me/51914068562" target="_blank">
-              <img src="src/img/whatsapp3.00.png" alt="WhatsApp" className="social-icon" />
+              <img src="img/whatsapp3.00.png" alt="WhatsApp" className="social-icon" />
             </a>
           </div>
 
@@ -324,7 +324,7 @@ const App: React.FC = () => {
       <div className="cv__header">
         <div className="cv__header-left">
           <img
-            src="src/img/online-education-unscreen.gif"
+            src="img/online-education-unscreen.gif"
             alt="Educación"
             className="cv__icon"
           />
@@ -367,7 +367,7 @@ const App: React.FC = () => {
       <div className="cv__header">
         <div className="cv__header-left">
           <img
-            src="src/img/hands-wrench-unscreen.gif"
+            src="img/hands-wrench-unscreen.gif"
             alt="Experiencia"
             className="cv__icon"
           />
