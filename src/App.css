@@ -1,8 +1,8 @@
 /* fonts*/
 @font-face {
   font-family: 'Varsity';
-  src: url('fonts/Golden Varsity Outline.ttf') format('woff2'),
-       url('fonts/Golden Varsity Outline.ttf') format('woff');
+  src: url('/fonts/Golden Varsity Outline.ttf') format('woff2'),
+       url('/fonts/Golden Varsity Outline.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,86 +10,86 @@
 
 @font-face {
   font-family: 'Talks';
-  src: url('fonts/Talks.ttf') format('woff2'),
-       url('fonts/Talks.ttf') format('woff');
+  src: url('/fonts/Talks.ttf') format('woff2'),
+       url('/fonts/Talks.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Morty';
-  src: url('fonts/Beasty Morty.ttf') format('woff2'),
-       url('fonts/Beasty Morty.ttf') format('woff');
+  src: url('/fonts/Beasty Morty.ttf') format('woff2'),
+       url('/fonts/Beasty Morty.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Calculator';
-  src: url('fonts/Calculator.ttf') format('woff2'),
-       url('fonts/Calculator.ttf') format('woff');
+  src: url('/fonts/Calculator.ttf') format('woff2'),
+       url('/fonts/Calculator.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Disco';
-  src: url('fonts/Disco.ttf') format('woff2'),
-       url('fonts/Disco.ttf') format('woff');
+  src: url('/fonts/Disco.ttf') format('woff2'),
+       url('/fonts/Disco.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Front';
-  src: url('fonts/Front Page Supplement.otf') format('woff2'),
-       url('fonts/Front Page Supplement.otf') format('woff');
+  src: url('/fonts/Front Page Supplement.otf') format('woff2'),
+       url('/fonts/Front Page Supplement.otf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Braven';
-  src: url('fonts/BravenRegular.ttf') format('woff2'),
-       url('fonts/BravenRegular.ttf') format('woff');
+  src: url('/fonts/BravenRegular.ttf') format('woff2'),
+       url('/fonts/BravenRegular.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpenRing';
-  src: url('fonts/OpenRing-Regular.ttf') format('woff2'),
-       url('fonts/OpenRing-Regular.ttf') format('woff');
+  src: url('/fonts/OpenRing-Regular.ttf') format('woff2'),
+       url('/fonts/OpenRing-Regular.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Browser';
-  src: url('fonts/Browser.ttf') format('woff2'),
-       url('fonts/Browser.ttf') format('woff');
+  src: url('/fonts/Browser.ttf') format('woff2'),
+       url('/fonts/Browser.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Nexa';
-  src: url('fonts/Nexa-ExtraLight.ttf') format('woff2'),
-       url('fonts/Nexa-ExtraLight.ttf') format('woff');
+  src: url('/fonts/Nexa-ExtraLight.ttf') format('woff2'),
+       url('/fonts/Nexa-ExtraLight.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NexaExtra';
-  src: url('fonts/Nexa-Heavy.ttf') format('woff2'),
-       url('fonts/Nexa-Heavy.ttf') format('woff');
+  src: url('/fonts/Nexa-Heavy.ttf') format('woff2'),
+       url('/fonts/Nexa-Heavy.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Trial';
-  src: url('fonts/TT Livret Text Trial Regular.ttf') format('woff2'),
-       url('fonts/TT Livret Text Trial Regular.ttf') format('woff');
+  src: url('/fonts/TT Livret Text Trial Regular.ttf') format('woff2'),
+       url('/fonts/TT Livret Text Trial Regular.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Milky';
-  src: url('fonts/Milky Lemon.otf') format('woff2'),
-       url('fonts/Milky Lemon.otf') format('woff');
+  src: url('/fonts/Milky Lemon.otf') format('woff2'),
+       url('/fonts/Milky Lemon.otf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
