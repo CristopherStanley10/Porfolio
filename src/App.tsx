@@ -278,7 +278,7 @@ const App: React.FC = () => {
     <h2 className="contact__title">Contacto</h2>
 
     <div className="contact__box">
-     
+      {/* 📩 FORMULARIO */}
       <div className="contact__form-side">
         <form className="contact__form">
           <input type="text" placeholder="Tu nombre" required />
@@ -288,22 +288,22 @@ const App: React.FC = () => {
         </form>
       </div>
 
-  
+      {/* ℹ️ INFORMACIÓN */}
       <div className="contact__info-side">
         <div className="contact__info">
           <h3>Redes Sociales</h3>
           <div className="contact__socials">
-            <a href="https://www.facebook.com/share/1B7y9ERbYg/" target="_blank">
-              <img src="img/facebook 3.00.png" alt="Facebook" className="social-icon" />
+            <a href="https://www.facebook.com/share/1B7y9ERbYg/" target="_blank" rel="noopener noreferrer">
+              <img src="/img/facebook-3.00.png" alt="Facebook" className="social-icon" />
             </a>
-            <a href="https://www.instagram.com/cristophersilvacruz?igsh=eGo3anlzdnAzM3Iz" target="_blank">
-              <img src="img/instagram.png" alt="Instagram" className="social-icon" />
+            <a href="https://www.instagram.com/cristophersilvacruz?igsh=eGo3anlzdnAzM3Iz" target="_blank" rel="noopener noreferrer">
+              <img src="/img/instagram.png" alt="Instagram" className="social-icon" />
             </a>
-            <a href="https://www.tiktok.com/@cristophersilvacr66?_t=ZS-90CA27LWm1a&_r=1" target="_blank">
-              <img src="img/tik-tok.png" alt="TikTok" className="social-icon" />
+            <a href="https://www.tiktok.com/@cristophersilvacr66?_t=ZS-90CA27LWm1a&_r=1" target="_blank" rel="noopener noreferrer">
+              <img src="/img/tik-tok.png" alt="TikTok" className="social-icon" />
             </a>
-            <a href="https://wa.me/51914068562" target="_blank">
-              <img src="img/whatsapp3.00.png" alt="WhatsApp" className="social-icon" />
+            <a href="https://wa.me/51914068562" target="_blank" rel="noopener noreferrer">
+              <img src="/img/whatsapp-3.00.png" alt="WhatsApp" className="social-icon" />
             </a>
           </div>
 
@@ -315,7 +315,11 @@ const App: React.FC = () => {
   </div>
 </section>
 
-<section id="cv" className="cv-section">
+<section 
+  id="cv" 
+  className="cv-section" 
+  style={{ backgroundImage: "url('/img/curri.jpg')" }}
+>
   <h2 className="cv__title">Currículum</h2>
 
   <div className="cv__content">
@@ -324,14 +328,13 @@ const App: React.FC = () => {
       <div className="cv__header">
         <div className="cv__header-left">
           <img
-            src="img/online-education-unscreen.gif"
+            src="/img/online-education-unscreen.gif"
             alt="Educación"
             className="cv__icon"
           />
           <h3>Educación</h3>
         </div>
 
-     
         <svg viewBox="0 0 36 36" className="circular-chart green" role="img" aria-label="90%">
           <path
             className="circle-bg"
@@ -356,25 +359,23 @@ const App: React.FC = () => {
         </li>
         <li>
           <strong>Certificación en Desarrollo Web FullStack</strong> – Platzi, Udemy, etc.
-          {/* Texto alternativo (también visible si quieres) */}
           <span className="cv__percentage-text">90%</span>
         </li>
       </ul>
     </div>
 
-  
+    {/* 💼 EXPERIENCIA */}
     <div className="cv__block experience">
       <div className="cv__header">
         <div className="cv__header-left">
           <img
-            src="img/hands-wrench-unscreen.gif"
+            src="/img/hands-wrench-unscreen.gif"
             alt="Experiencia"
             className="cv__icon"
           />
           <h3>Experiencia Profesional</h3>
         </div>
 
-   
         <svg viewBox="0 0 36 36" className="circular-chart blue" role="img" aria-label="85%">
           <path
             className="circle-bg"
@@ -405,9 +406,9 @@ const App: React.FC = () => {
     </div>
   </div>
 
- 
+  {/* 📄 DESCARGA CV */}
   <div className="cv__download">
-    <a href="CV-Cristopher-Silva.pdf" download className="super-button">
+    <a href="/CV-Cristopher-Silva.pdf" download className="super-button">
       📄 Descargar CV (PDF)
       <svg
         className="arrow"
