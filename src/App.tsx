@@ -273,54 +273,56 @@ const App: React.FC = () => {
 <Services />
       </section>
 
-      
-<section id="contact">
-  <div className="contact">
-    <h2 className="contact__title">Contacto</h2>
+ <section 
+  id="contact" 
+  className="contact" 
+  style={{ backgroundImage: "url('/img/network-9091914.jpg')" }}
+>
+  <h2 className="contact__title">Contacto</h2>
 
-    <div className="contact__box">
-      {/* 📩 FORMULARIO */}
-      <div className="contact__form-side">
-        <form className="contact__form" action="#" method="post">
-          <label htmlFor="name" className="sr-only">Nombre</label>
-          <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+  <div className="contact__box">
+    {/* 📩 FORMULARIO */}
+    <div className="contact__form-side">
+      <form className="contact__form" action="#" method="post">
+        <label htmlFor="name" className="sr-only">Nombre</label>
+        <input id="name" name="name" type="text" placeholder="Tu nombre" required />
 
-          <label htmlFor="email" className="sr-only">Correo</label>
-          <input id="email" name="email" type="email" placeholder="Tu correo" required />
+        <label htmlFor="email" className="sr-only">Correo</label>
+        <input id="email" name="email" type="email" placeholder="Tu correo" required />
 
-          <label htmlFor="message" className="sr-only">Mensaje</label>
-          <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
+        <label htmlFor="message" className="sr-only">Mensaje</label>
+        <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
 
-          <button type="submit" className="neon-pulse">Enviar Mensaje</button>
-        </form>
-      </div>
+        <button type="submit" className="neon-pulse">Enviar Mensaje</button>
+      </form>
+    </div>
 
-      {/* ℹ️ INFORMACIÓN */}
-      <div className="contact__info-side">
-        <div className="contact__info">
-          <h3>Redes Sociales</h3>
-          <div className="contact__socials">
-            <a href="https://www.facebook.com/share/1B7y9ERbYg/" target="_blank" rel="noopener noreferrer">
-              <img src="img/facebook 3.00.png" alt="Facebook" className="social-icon" />
-            </a>
-            <a href="https://www.instagram.com/cristophersilvacruz" target="_blank" rel="noopener noreferrer">
-              <img src="img/instagram.png" alt="Instagram" className="social-icon" />
-            </a>
-            <a href="https://www.tiktok.com/@cristophersilvacr66" target="_blank" rel="noopener noreferrer">
-              <img src="img/tik-tok.png" alt="TikTok" className="social-icon" />
-            </a>
-            <a href="https://wa.me/51914068562" target="_blank" rel="noopener noreferrer">
-              <img src="img/whatsapp3.00.png" alt="WhatsApp" className="social-icon" />
-            </a>
-          </div>
-
-          <p><strong>Ubicación:</strong> Lima, Perú</p>
-          <p><strong>Disponibilidad:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+    {/* ℹ️ INFORMACIÓN */}
+    <div className="contact__info-side">
+      <div className="contact__info">
+        <h3>Redes Sociales</h3>
+        <div className="contact__socials">
+          <a href="https://www.facebook.com/share/1B7y9ERbYg/" target="_blank" rel="noopener noreferrer">
+            <img src="/img/facebook-3.00.png" alt="Facebook" className="social-icon" />
+          </a>
+          <a href="https://www.instagram.com/cristophersilvacruz" target="_blank" rel="noopener noreferrer">
+            <img src="/img/instagram.png" alt="Instagram" className="social-icon" />
+          </a>
+          <a href="https://www.tiktok.com/@cristophersilvacr66" target="_blank" rel="noopener noreferrer">
+            <img src="/img/tik-tok.png" alt="TikTok" className="social-icon" />
+          </a>
+          <a href="https://wa.me/51914068562" target="_blank" rel="noopener noreferrer">
+            <img src="/img/whatsapp-3.00.png" alt="WhatsApp" className="social-icon" />
+          </a>
         </div>
+
+        <p><strong>Ubicación:</strong> Lima, Perú</p>
+        <p><strong>Disponibilidad:</strong> Lunes a Viernes, 9:00 - 18:00</p>
       </div>
     </div>
   </div>
 </section>
+
 
 <section 
   id="cv" 
