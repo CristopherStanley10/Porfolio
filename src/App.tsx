@@ -61,7 +61,6 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      {/* Overlay clickeable para cerrar menú */}
       {isNavVisible && (
         <div className="nav-overlay active" onClick={toggleNav}></div>
       )}
@@ -279,7 +278,7 @@ const App: React.FC = () => {
     <h2 className="contact__title">Contacto</h2>
 
     <div className="contact__box">
-      {/* Lado Izquierdo - Formulario */}
+     
       <div className="contact__form-side">
         <form className="contact__form">
           <input type="text" placeholder="Tu nombre" required />
@@ -289,7 +288,7 @@ const App: React.FC = () => {
         </form>
       </div>
 
-      {/* Lado Derecho - Información */}
+  
       <div className="contact__info-side">
         <div className="contact__info">
           <h3>Redes Sociales</h3>
@@ -332,7 +331,7 @@ const App: React.FC = () => {
           <h3>Educación</h3>
         </div>
 
-        {/* 🔹 Porcentaje Circular (visible en todos los tamaños) */}
+     
         <svg viewBox="0 0 36 36" className="circular-chart green" role="img" aria-label="90%">
           <path
             className="circle-bg"
@@ -363,7 +362,7 @@ const App: React.FC = () => {
       </ul>
     </div>
 
-    {/* 💼 EXPERIENCIA */}
+  
     <div className="cv__block experience">
       <div className="cv__header">
         <div className="cv__header-left">
@@ -375,7 +374,7 @@ const App: React.FC = () => {
           <h3>Experiencia Profesional</h3>
         </div>
 
-        {/* 🔹 Porcentaje Circular (visible en todos los tamaños) */}
+   
         <svg viewBox="0 0 36 36" className="circular-chart blue" role="img" aria-label="85%">
           <path
             className="circle-bg"
@@ -406,7 +405,7 @@ const App: React.FC = () => {
     </div>
   </div>
 
-  {/* 🚀 BOTÓN DE DESCARGA */}
+ 
   <div className="cv__download">
     <a href="CV-Cristopher-Silva.pdf" download className="super-button">
       📄 Descargar CV (PDF)
